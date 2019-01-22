@@ -165,7 +165,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(SRC)
 	gcc -Wall -Wextra -Werror -c $(SRC)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
