@@ -6,7 +6,7 @@
 #    By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 12:50:22 by nkellum           #+#    #+#              #
-#    Updated: 2019/02/04 11:31:25 by nkellum          ###   ########.fr        #
+#    Updated: 2019/03/20 14:06:36 by nkellum          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -160,7 +160,8 @@ ft_strtrim.c \
 ft_tolower.c \
 ft_toupper.c \
 ft_constrain.c \
-get_next_line.c
+get_next_line.c \
+ft_itoa_base.c
 
 OBJ = $(SRC:.c=.o)
 

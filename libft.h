@@ -6,7 +6,7 @@
 /*   By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:40:16 by nkellum           #+#    #+#             */
-/*   Updated: 2019/02/04 12:32:33 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/03/20 14:06:18 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,7 @@ int					ft_min(int a, int b);
 int					ft_square(int n);
 int					ft_constrain(int val, int min, int max);
 int					get_next_line(const int fd, char **line);
+char				*ft_itoa_base(int value, int base);
+
 
 #endif
