@@ -6,7 +6,7 @@
 /*   By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:40:16 by nkellum           #+#    #+#             */
-/*   Updated: 2019/03/20 14:06:18 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/07/10 14:37:41 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf/ft_printf.h"
 
 # define BUFF_SIZE 32
 
@@ -91,7 +92,6 @@ int					ft_min(int a, int b);
 int					ft_square(int n);
 int					ft_constrain(int val, int min, int max);
 int					get_next_line(const int fd, char **line);
-char				*ft_itoa_base(int value, int base);
 
 
 #endif

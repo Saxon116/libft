@@ -6,7 +6,7 @@
 #    By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 12:50:22 by nkellum           #+#    #+#              #
-#    Updated: 2019/03/20 14:06:36 by nkellum          ###   ########.fr        #
+#    Updated: 2019/07/10 14:43:28 by nkellum          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -160,10 +160,22 @@ ft_strtrim.c \
 ft_tolower.c \
 ft_toupper.c \
 ft_constrain.c \
-get_next_line.c \
-ft_itoa_base.c
+get_next_line.c
 
-OBJ = $(SRC:.c=.o)
+SRC_PRINTF = flag_init_priority.c parse_flags.c print_arg.c print_double.c \
+ft_printf.c print_hex.c undefined.c print_string.c print_octal.c \
+print_num.c
+
+SRC_LBFTPF = ./ft_printf/libftprintf
+SRC_PF = ./ft_printf
+SRC_AUX = ft_putchar.c ft_putstr.c ft_putnbr.c ft_strchr.c ft_strsub.c \
+ft_isdigit.c ft_atoi.c ft_itoa_base.c ft_strlen.c ft_atoi_base.c \
+ft_uputnbr.c ft_utoa_base.c contains.c num_length.c
+
+SRC += $(addprefix $(SRC_PF)/,$(SRC_PRINTF))
+SRC += $(addprefix $(SRC_LBFTPF)/,$(SRC_AUX))
+OBJ = *.o
+
 
 # This is a minimal set of ANSI/VT100 color codes
 _END=\x1b[0m
