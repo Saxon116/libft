@@ -6,7 +6,7 @@
 /*   By: lucmarti <lucmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 09:44:52 by lucmarti          #+#    #+#             */
-/*   Updated: 2019/09/10 13:18:34 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/09/10 13:47:46 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,9 @@ t_vector2	*mul_vector2(t_vector2 *u, t_vector2 *v, int free)
 	return (w);
 }
 
-int			scal_vector2(t_vector2 *u, t_vector2 *v, int free)
+double		scal_vector2(t_vector2 *u, t_vector2 *v, int free)
 {
-	int	w;
+	double	w;
 
 	w = u->x * v->y + u->y * v->x;
 	if (free == 0)

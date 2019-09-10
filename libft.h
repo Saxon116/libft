@@ -6,7 +6,7 @@
 /*   By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:40:16 by nkellum           #+#    #+#             */
-/*   Updated: 2019/09/10 13:35:41 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/09/10 13:48:10 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,15 +113,10 @@ t_vector3			*new_vector3(double x, double y, double z);
 t_vector2			*add_vector2(t_vector2 *u, t_vector2 *v, int free);
 t_vector2			*sub_vector2(t_vector2 *u, t_vector2 *v, int free);
 t_vector2			*mul_vector2(t_vector2 *u, t_vector2 *v, int free);
-int					scal_vector2(t_vector2 *u, t_vector2 *v, int free);
+double				scal_vector2(t_vector2 *u, t_vector2 *v, int free);
 t_vector3			*add_vector3(t_vector3 *u, t_vector3 *v, int free);
 t_vector3			*sub_vector3(t_vector3 *u, t_vector3 *v, int free);
 t_vector3			*mul_vector3(t_vector3 *u, t_vector3 *v, int free);
-int					scal_vector3(t_vector3 *u, t_vector3 *v, int free);
-
-
-
-
-
+double				scal_vector3(t_vector3 *u, t_vector3 *v, int free);
 
 #endif
