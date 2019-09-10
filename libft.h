@@ -6,7 +6,7 @@
 /*   By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:40:16 by nkellum           #+#    #+#             */
-/*   Updated: 2019/07/10 14:37:41 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/09/10 13:19:17 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,20 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_vector2
+{
+	double				x;
+	double				y;
+}					t_vector2;
+
+typedef struct		s_vector3
+{
+	double				x;
+	double				y;
+	double				z;
+}					t_vector3;
+
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
@@ -92,6 +106,14 @@ int					ft_min(int a, int b);
 int					ft_square(int n);
 int					ft_constrain(int val, int min, int max);
 int					get_next_line(const int fd, char **line);
+t_vector2			*vector2_copy(t_vector2 *src);
+t_vector3			*vector3_copy(t_vector3 *src);
+t_vector2			*new_vector2(double x, double y);
+t_vector3			*new_vector3(double x, double y, double z);
+
+
+
+
 
 
 #endif
