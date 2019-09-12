@@ -6,7 +6,7 @@
 /*   By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:40:16 by nkellum           #+#    #+#             */
-/*   Updated: 2019/09/10 13:48:10 by nkellum          ###   ########.fr       */
+/*   Updated: 2019/09/12 13:01:29 by nkellum          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,5 +118,8 @@ t_vector3			*add_vector3(t_vector3 *u, t_vector3 *v, int free);
 t_vector3			*sub_vector3(t_vector3 *u, t_vector3 *v, int free);
 t_vector3			*mul_vector3(t_vector3 *u, t_vector3 *v, int free);
 double				scal_vector3(t_vector3 *u, t_vector3 *v, int free);
+void				print_string_array(char **array);
+char				*replace_substring(char *str, char *substr, char *rep);
+char				**string_arr_cpy(char **array);
 
 #endif
