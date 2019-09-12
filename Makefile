@@ -6,7 +6,7 @@
 #    By: nkellum <nkellum@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 12:50:22 by nkellum           #+#    #+#              #
-#    Updated: 2019/09/05 17:39:36 by nkellum          ###   ########.fr        #
+#    Updated: 2019/09/12 13:03:46 by nkellum          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -164,7 +164,10 @@ get_next_line.c \
 ft_vector2.c \
 ft_vector2cp.c \
 ft_vector3.c \
-ft_vector3cp.c
+ft_vector3cp.c \
+print_string_array.c \
+replace_substring.c \
+string_arr_cpy.c
 
 SRC_PRINTF = flag_init_priority.c parse_flags.c print_arg.c print_double.c \
 ft_printf.c print_hex.c undefined.c print_string.c print_octal.c \
